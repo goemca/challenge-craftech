@@ -1,9 +1,12 @@
+# imagen liviana de python
 FROM python:3.11-slim AS runtime
 
-ENV PYTHONDONTWRITEBYTECODE=1 \
+# evita que python genere archivos compilados y tambien para el uso de logs a salida
+ENV PYTHONDONTWRITEBYTECODE=1 \ 
     PYTHONUNBUFFERED=1
 
-RUN apt-get update \
+# Se instalan las depencias del sistema
+RUN apt-get update \ 
     && apt-get install --no-install-recommends -y netcat-openbsd libpq5 \
     && rm -rf /var/lib/apt/lists/* \
     && groupadd --system django \

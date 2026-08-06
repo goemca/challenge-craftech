@@ -1,11 +1,14 @@
+#uso una imagen de node para poder instalar depencias
 FROM node:20-alpine AS build
 
 WORKDIR /app
 COPY package.json package-lock.json ./
+#simil npm install
 RUN npm ci
 COPY . .
 RUN npm run build
 
+#uso ngnix para poder ejecutar como servidor
 FROM nginxinc/nginx-unprivileged:1.27-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/build /usr/share/nginx/html
