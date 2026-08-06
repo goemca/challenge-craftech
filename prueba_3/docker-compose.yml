@@ -1,0 +1,10 @@
+services:
+  nginx:
+    # evita iniciar un deployment sin indicar su version
+    image: ${IMAGE_REF:?IMAGE_REF must contain an immutable image tag}
+    ports:
+      - "${HOST_PORT:-8081}:8080"
+    restart: unless-stopped
+    labels:
+      deployment.environment: ${DEPLOY_ENV:-local}
+      deployment.image: ${IMAGE_REF}
