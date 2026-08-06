@@ -1,6 +1,5 @@
 # Prueba 1 - Arquitectura web distribuida en AWS
 
-![Arquitectura AWS]
 
 ## Descripción y decisiones
 
