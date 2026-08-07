@@ -10,7 +10,7 @@ challenge for Craftech
 
 ## Uso de inteligencia artificial
 
-Se utilizó modelos de modelos LLM como ChatGPT y Geminini asistente,mejora y ayuda para la resolución del mismo
+Se utilizó modelos de modelos LLM como ChatGPT y Geminini como asistente,mejora y ayuda para la resolución del mismo
 
 ### Prompts utilizados
 
