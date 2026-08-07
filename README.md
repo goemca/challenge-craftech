@@ -14,9 +14,8 @@ Se utilizó modelos de modelos LLM como ChatGPT y Geminini como asistente,mejora
 
 ### Prompts utilizados
 
-- Analizar a mejorarícitos.
 - Ayudar a mejorar la arquitectura AWS distribuida y tambien en calculo de costos.
-- Ayudar y mejorar los Dockerfiles para una mejor performance , como tambien el file de docker Compose.
+- Revisar errores y ayudar a mejorar los Dockerfiles y archivos de leguajes como python y javascript para una mejor performance , como tambien el file de docker Compose.
 - Ayudar y asistir en la config. de un pipeline para el despliegue CICD en github.
 
 ### Herramientas y skills
